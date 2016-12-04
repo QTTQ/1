@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="vue (1).js"></script>
+	</head>
+	<body>
+		<div id="app">
+			
+		<template v-for="item in items">
+			<p>{{item.msg}}</p>
+			<p>1</p>
+		</template>
+		</div>
+<script>
+	window.onload=function(){
+		new Vue({
+			el:"#app",
+			data:{
+				items:[
+				{
+					msg:"one"
+				},
+	            {
+	            	msg:"two"
+	            }
+				]
+			}
+			
+		})
+	}
+</script>		
+	</body>
+</html>

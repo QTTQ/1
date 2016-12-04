@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>style 对象语法 数组语法</title>
+		<script src="vue (1).js"></script>
+	</head>
+	<body>
+		<div id="app" v-bind:style="[a,b]">
+			{{msg}}
+			</div>
+		<script>
+			window.onload=function(){
+			new Vue({
+					el:"#app",
+					data:{
+						msg:"么么哒",
+						a:{
+							color:"red"
+						},
+						b:{
+							fontSize:"300px"
+						}
+}						
+				})
+			}
+		</script>
+	</body>
+</html>

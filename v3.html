@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>指令</title>
+		<script type="text/javascript" src="vue (1).js" ></script>
+	</head>
+	<body>
+		<div id="demo">
+			<p v-if="msg">啪啪啪</p>
+		么么哒
+		</div>
+		<script>
+			window.onload=function(){
+				var data={msg:0};
+				new Vue({
+					el:"#demo",
+					data:data
+				})
+			}
+		</script>
+	</body>
+</html>

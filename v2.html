@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="UTF-8">
+		<title>插值</title>
+		<script src="vue (1).js"></script>
+</head>
+<body>
+<div id='demo'>
+<span>This will never change: {{ msg }}</span><br>
+<span>This will never change: {{* msg }}</span>
+<input type="text" value="{{msg}}" />
+</div>
+
+<script>
+	window.onload=function(){
+		var data={msg:"为什么都喜欢说哈喽我的"}
+		new Vue({
+			el:"#demo",
+			data:data
+		})
+		data.msg="hhah"
+	}
+</script>
+</body>
+</html>
